@@ -1,0 +1,41 @@
+\documentclass[utf8,xcolor=table]{beamer}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+%\usepackage{tikz-uml}
+\usepackage{minted}
+\usepackage{cmap}
+
+\mode<presentation>{
+	\usetheme{CambridgeUS}
+}
+
+\renewcommand{\t}[1]{\ifmmode{\mathtt{#1}}\else{\texttt{#1}}\fi}
+
+\title{Перегрузка операторов}
+\author{Егор Суворов}
+\institute[СПб АУ]{Курс <<Парадигмы и языки программирования>>, подгруппа 3}
+\date[25.09.2016]{Понедельник, 25 сентября 2016 года}
+
+\setlength{\arrayrulewidth}{1pt}
+
+\input{../private/contacts}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\input{00-org}
+\input{01-op-01-intro}
+\input{01-op-02-arith}
+\input{01-op-03-comp}
+\input{01-op-04-inher}
+\input{01-op-05-func}
+\input{02-coll-01-dict}
+\input{02-coll-02-iter}
+\input{03-cont}
+
+\end{document}
