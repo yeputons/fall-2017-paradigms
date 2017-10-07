@@ -1,0 +1,27 @@
+def foo(a, b):
+  print(a + b)
+  a + b
+foo(1, 2 + 3)
+
+
+def abs(a, b):
+  if a < b then
+    b - a
+  else
+    a - b
+
+operation1 = FunctionDeclaration("foo", Function(["a", "b"],
+  [
+    Print(BinaryOperation(Reference("a"), "+", Reference("b"))),
+    BinaryOperation(Reference("a"), "+", Reference("b"))
+  ]
+))
+
+operation2 = FunctionCall(Reference("foo"), [
+  Number(1),
+  BinaryOperation(Number(2), "+", Number(3))
+])
+
+s = Scope()
+operation1.evaluate(s)
+operation2.evaluate(s)
