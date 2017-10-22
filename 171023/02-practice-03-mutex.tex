@@ -34,7 +34,7 @@ void* worker(void* arg __attribute__((unused))) {
     return NULL;
 }
 \end{minted}
-\href{https://github.com/yeputons/fall-2016-paradigms/raw/master/161019/sources/09-two-threads-bad-mutex.c}{Код}.
+\href{https://github.com/yeputons/fall-2017-paradigms/raw/master/171023/sources/09-two-threads-bad-mutex.cpp}{Код}.
 \end{frame}
 
 \begin{frame}[fragile]{Корректный пример}
@@ -59,13 +59,13 @@ void* worker(void* arg __attribute__((unused))) {
 
 \begin{frame}{Упражнение}
 	\begin{enumerate}
-		\item Добавьте мьютекс в \href{https://github.com/yeputons/fall-2016-paradigms/raw/master/161019/sources/08-two-threads.c}{двойной счётчик}.
+		\item Добавьте мьютекс в \href{https://github.com/yeputons/fall-2017-paradigms/raw/master/171023/sources/08-two-threads.cpp}{двойной счётчик}.
 		\item Уменьшите $N$ на несколько порядков (мьютексы сильно замедляют программу).
 		\item Убедитесь, что всегда выводится $2N$.
-		\item Добавьте мьютекс в \href{https://github.com/yeputons/fall-2016-paradigms/raw/master/161019/sources/04-writeln-race.c}{writeln}.
+		\item Добавьте мьютекс в \href{https://github.com/yeputons/fall-2017-paradigms/raw/master/171023/sources/04-writeln-race.cpp}{writeln}.
 	\end{enumerate}
-	\href{https://github.com/yeputons/fall-2016-paradigms/raw/master/161019/sources/10-two-threads-good-mutex.c}{Исправленный двойной счётчик},
-	\href{https://github.com/yeputons/fall-2016-paradigms/raw/master/161019/sources/11-writeln-mutex.c}{исправленный writeln}.
+	\href{https://github.com/yeputons/fall-2017-paradigms/raw/master/171023/sources/10-two-threads-good-mutex.cpp}{Исправленный двойной счётчик},
+	\href{https://github.com/yeputons/fall-2017-paradigms/raw/master/171023/sources/11-writeln-mutex.cpp}{исправленный writeln}.
 \end{frame}
 
 \begin{frame}[fragile]{Блокировка}
