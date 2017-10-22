@@ -36,6 +36,19 @@ int main(void) {
 \end{minted}
 \end{frame}
 
+\begin{frame}[fragile]{Упражнение: сборка кода}
+	\begin{enumerate}
+		\item Качаем решение с \href{https://github.com/yeputons/fall-2017-paradigms/raw/master/171023/sources/01-simple.cpp}{GitHub}.
+		\item \texttt{g++ 01-simple.c -o 01-simple -Wall -Wextra -Werror -pthread} или аналог в вашей IDE.
+		\item \texttt{./01-simple}
+		\item Ожидаемый вывод:
+\begin{verbatim}
+Hello from thread! arg=1234
+data is 1244
+\end{verbatim}
+	\end{enumerate}
+\end{frame}
+
 \begin{frame}{Как живут потоки}
 	\begin{itemize}
 		\item При создании потока при помощи \t{pthread\_create} указывается функция и её аргумент "--- один указатель на что угодно.
@@ -54,28 +67,15 @@ int main(void) {
 	\end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]{Упражнение: сборка кода}
-	\begin{enumerate}
-		\item Качаем решение с \href{https://github.com/yeputons/fall-2017-paradigms/raw/master/171023/sources/01-simple.cpp}{GitHub}.
-		\item \texttt{gcc 01-simple.c -o 01-simple -std=gnu99 -Wall -Wextra -Werror -pthread} или аналог в вашей IDE.
-		\item \texttt{./01-simple}
-		\item Ожидаемый вывод:
-\begin{verbatim}
-Hello from thread! arg=1234
-data is 1244
-\end{verbatim}
-	\end{enumerate}
-\end{frame}
-
-\begin{frame}{Несколько замечаний про C}
+\begin{frame}{Несколько замечаний про C/C++}
 	\begin{itemize}
-		\item На языке C лучше включить все предупреждения компилятора (warnings), в GCC это делают ключи \t{-Wall}, \t{-Wextra}.
+		\item На языках C и C++ лучше включить все предупреждения компилятора (warnings), в GCC это делают ключи \t{-Wall}, \t{-Wextra}.
 		\item Если вы включили предупреждения "--- их лучше сразу трактовать как ошибки (\t{-Werror}), иначе быстро научитесь их игнорировать.
 		\item Если аргумент функции не используется, после него в GCC надо писать \t{\_\_attribute\_\_((unused))}.
 		\item Из функции всегда надо что-то вернуть (хотя бы \t{NULL}).
 		\item \href{http://codeforces.com/blog/entry/17747}{Никогда} не начинайте название переменной с нижнего подчёркивания!
-		\item Константы задаются при помощи \t{\#define SOME\_CONST (value)}.
-		\item Встроенного типа \t{bool} нет, надо подключить \t{\#include~<stdbool.h>}
+		\item
+			\t{(void*)123} "--- \href{https://www.securecoding.cert.org/confluence/display/c/INT36-C.+Converting+a+pointer+to+integer+or+integer+to+pointer}{\textit{плохая} идея для передачи числа}.
 	\end{itemize}
 \end{frame}
 
