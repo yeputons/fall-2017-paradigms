@@ -1,11 +1,11 @@
-APPS=$(sort $(basename $(wildcard *.c)))
+APPS=$(sort $(basename $(wildcard *.cpp)))
 
 .PHONY: all clean
 
 all: $(APPS)
 
-%: %.c
-	gcc $^ -o $@ -std=gnu99 -Wall -Wextra -Werror -pthread
+%: %.cpp
+	g++ $^ -o $@ -Wall -Wextra -Werror -pthread
 
 clean:
 	rm $(APPS) >/dev/null 2>&1 || true
