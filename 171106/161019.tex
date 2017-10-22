@@ -1,0 +1,47 @@
+\documentclass[utf8,xcolor=table]{beamer}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{minted}
+\usepackage{ulem}
+\usepackage{cmap}
+\usepackage{multirow}
+
+\hypersetup{colorlinks,linkcolor=blue,urlcolor=blue}
+
+\mode<presentation>{
+	\usetheme{CambridgeUS}
+}
+
+\renewcommand{\t}[1]{\ifmmode{\mathtt{#1}}\else{\texttt{#1}}\fi}
+
+\title{Многопоточность}
+\author{Егор Суворов}
+\institute[СПб АУ]{Курс <<Парадигмы и языки программирования>>, подгруппа 3}
+\date[19.10.2016]{Среда, 19 октября 2016 года}
+
+\setlength{\arrayrulewidth}{1pt}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}{План занятия}
+	\tableofcontents
+\end{frame}
+
+\input{01-intro-01-why}
+\input{01-intro-02-how}
+\input{02-practice-01-simple}
+\input{02-practice-02-race}
+\input{02-practice-03-mutex}
+\input{02-practice-04-dont-try}
+\input{03-condvar-01-spinlock}
+\input{03-condvar-02-condvar}
+\input{04-bonus}
+\input{05-hometask}
+
+\end{document}
