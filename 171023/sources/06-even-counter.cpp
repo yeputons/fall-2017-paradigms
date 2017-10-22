@@ -3,8 +3,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define N 500000000
-#define M 10000
+const int N = 500000000;
+const int M = 10000;
 
 int data;
 void* worker(void* arg __attribute__((unused))) {

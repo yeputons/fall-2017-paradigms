@@ -3,8 +3,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define N 500000
-#define M 10000
+const int N = 500000;
+const int M = 10000;
 
 int data;
 pthread_mutex_t m;
