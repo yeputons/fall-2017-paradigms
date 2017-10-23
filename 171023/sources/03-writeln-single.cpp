@@ -10,7 +10,7 @@ void writeln(const char* s) {
     putc('\n', stdout);
 }
 
-int main(void) {
+int main() {
     for (;;) {
         writeln("Hello from the main thread");
     }

@@ -14,7 +14,7 @@ void* worker(void* arg __attribute__((unused))) {
     return NULL;
 }
 
-int main(void) {
+int main() {
     pthread_t id1, id2;
     assert(pthread_create(&id1, NULL, worker, NULL) == 0);
     assert(pthread_create(&id2, NULL, worker, NULL) == 0);

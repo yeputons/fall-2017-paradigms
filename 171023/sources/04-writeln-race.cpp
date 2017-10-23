@@ -16,7 +16,7 @@ void* worker(void* arg __attribute__((unused))) {
     }
 }
 
-int main(void) {
+int main() {
     pthread_t id;
     assert(pthread_create(&id, NULL, worker, NULL) == 0);
     for (;;) {

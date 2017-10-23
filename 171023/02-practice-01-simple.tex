@@ -23,7 +23,7 @@ void* worker(void* arg) {
     *(int*)arg += 10;
     return arg;
 }
-int main(void) {
+int main() {
     pthread_t id;
     int data = 1234;
     assert(pthread_create(&id, NULL, worker, &data) == 0);

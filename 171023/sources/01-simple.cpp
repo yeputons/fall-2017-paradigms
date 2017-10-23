@@ -9,7 +9,7 @@ void* worker(void* arg) {
     return arg;
 }
 
-int main(void) {
+int main() {
     pthread_t id;
     int data = 1234;
     assert(pthread_create(&id, NULL, worker, &data) == 0);
