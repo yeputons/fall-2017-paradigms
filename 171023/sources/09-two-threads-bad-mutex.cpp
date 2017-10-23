@@ -7,7 +7,7 @@ const int N = 500000;
 const int M = 10000;
 
 int data;
-void* worker(void* arg __attribute__((unused))) {
+void* worker(void*) {
     pthread_mutex_t m;
     pthread_mutex_init(&m, NULL);
     for (int i = 0; i < N; i++) {

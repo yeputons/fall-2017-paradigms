@@ -13,7 +13,7 @@ void writeln(const char* s) {
     pthread_mutex_unlock(&m);
 }
 
-void* worker(void* arg __attribute__((unused))) {
+void* worker(void*) {
     for (;;) {
         writeln("Hello from the second thread");
     }

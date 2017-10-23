@@ -8,7 +8,7 @@ const int M = 10000;
 
 int data;
 pthread_mutex_t m;
-void* worker(void* arg __attribute__((unused))) {
+void* worker(void*) {
     for (int i = 0; i < N; i++) {
         pthread_mutex_lock(&m);
         data++;

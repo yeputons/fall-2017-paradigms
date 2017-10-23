@@ -7,7 +7,7 @@ const int N = 500000000;
 const int M = 1000;
 
 int data;
-void* worker(void* arg __attribute__((unused))) {
+void* worker(void*) {
     for (int i = 0; i < N; i++) {
         data++;
     }

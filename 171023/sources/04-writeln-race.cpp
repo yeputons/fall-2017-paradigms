@@ -10,7 +10,7 @@ void writeln(const char* s) {
     putc('\n', stdout);
 }
 
-void* worker(void* arg __attribute__((unused))) {
+void* worker(void*) {
     for (;;) {
         writeln("Hello from the second thread");
     }

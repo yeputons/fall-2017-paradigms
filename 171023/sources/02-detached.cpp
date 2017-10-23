@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 int data = 1234;
-void* worker(void* arg __attribute__((unused))) {
+void* worker(void*) {
     printf("Hello from thread! data=%d\n", data);
     data += 10;
     return NULL;
