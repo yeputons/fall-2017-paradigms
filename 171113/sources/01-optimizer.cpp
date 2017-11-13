@@ -4,6 +4,7 @@
 #include <stdlib.h>
 
 #pragma GCC optimize("-O2")
+#pragma optimize("t", on)
 
 int data;
 void* worker(void*) {
