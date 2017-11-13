@@ -118,7 +118,6 @@
          transform="scale(0.4)" />
     </marker>
     <linearGradient
-       inkscape:collect="always"
        id="linearGradient7083"
        osb:paint="gradient">
       <stop
@@ -211,7 +210,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="517.43461"
+     inkscape:cx="366.4168"
      inkscape:cy="360.83006"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -231,7 +230,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -392,43 +391,6 @@
        id="path9106-8"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccc" />
-    <g
-       transform="matrix(0.70266388,0,0,0.677874,561.49591,236.36707)"
-       id="g8574-26">
-      <g
-         id="g10149-7">
-        <rect
-           style="fill:#ffffff;fill-opacity:1;stroke:#808080;stroke-width:2.02458978;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="rect4798-0-3-64"
-           width="352.02655"
-           height="84.80188"
-           x="305.59659"
-           y="486.70224" />
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:25px;line-height:125%;font-family:'CMU Typewriter Text';-inkscape-font-specification:'CMU Typewriter Text Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:50;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           x="319.92572"
-           y="517.32819"
-           id="text4794-0-7-6"
-           sodipodi:linespacing="125%"><tspan
-             id="tspan6958-8-1"
-             sodipodi:role="line"
-             x="319.92572"
-             y="517.32819"
-             style="font-size:30px;stroke:none;stroke-width:50;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">func(void *param) {</tspan><tspan
-             id="tspan8572-2"
-             sodipodi:role="line"
-             x="319.92572"
-             y="554.82819"
-             style="font-size:30px;stroke:none;stroke-width:50;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">  // param равен arg2</tspan></text>
-      </g>
-    </g>
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#808080;stroke-width:2.76063061;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.76063059, 2.76063059;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#TriangleOutM)"
-       d="m 338.25335,558.61785 0,47.93292 435.82171,0"
-       id="path8976"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccc" />
     <text
        sodipodi:linespacing="125%"
        id="text6960"
@@ -486,50 +448,6 @@
         </g>
       </g>
     </g>
-    <rect
-       style="fill:#c1e1ff;fill-opacity:1;stroke:none;stroke-width:1.99354672;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect10311-9"
-       width="267.35315"
-       height="442.91345"
-       x="488.74921"
-       y="433.15851" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#808080;stroke-width:4.14094591;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.14094588, 4.14094588;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 621.27551,533.59164 0,245.05727"
-       id="path8934-8"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
-    <g
-       transform="matrix(0.70266388,0,0,0.677874,281.35041,171.46537)"
-       id="g8574">
-      <g
-         id="g10149">
-        <rect
-           style="fill:#ffffff;fill-opacity:1;stroke:#808080;stroke-width:2.03676939;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="rect4798-0-3"
-           width="356.32693"
-           height="84.789474"
-           x="305.60281"
-           y="486.70847" />
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:25px;line-height:125%;font-family:'CMU Typewriter Text';-inkscape-font-specification:'CMU Typewriter Text Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:50;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           x="319.92572"
-           y="517.32819"
-           id="text4794-0-7"
-           sodipodi:linespacing="125%"><tspan
-             id="tspan6958-8"
-             sodipodi:role="line"
-             x="319.92572"
-             y="517.32819"
-             style="font-size:30px;stroke:none;stroke-width:50;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">func(void *param) {</tspan><tspan
-             id="tspan8572"
-             sodipodi:role="line"
-             x="319.92572"
-             y="554.82819"
-             style="font-size:30px;stroke:none;stroke-width:50;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">  // param равен arg1</tspan></text>
-      </g>
-    </g>
     <g
        transform="matrix(0.70266388,0,0,0.677874,-103.83631,80.522297)"
        id="g8574-3-1-1-0">
@@ -563,65 +481,6 @@
         </g>
       </g>
     </g>
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#808080;stroke-width:2.76063061;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.76063059, 2.76063059;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker9108)"
-       d="m 515.5309,835.72882 -149.27755,0 -1.01015,34.04226"
-       id="path9106"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccc" />
-    <g
-       transform="matrix(0.70266388,0,0,0.677874,279.94843,459.69852)"
-       id="g8574-2">
-      <g
-         id="g8790">
-        <g
-           id="g10155"
-           transform="translate(7.9594193,4)">
-          <rect
-             y="486.64368"
-             x="321.70047"
-             height="84.918976"
-             width="312.20328"
-             id="rect4798-0-3-6"
-             style="fill:#ffffff;fill-opacity:1;stroke:#808080;stroke-width:1.9079529;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-          <text
-             sodipodi:linespacing="125%"
-             id="text4794-0-7-5"
-             y="518.28815"
-             x="330.84454"
-             style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:25px;line-height:125%;font-family:'CMU Typewriter Text';-inkscape-font-specification:'CMU Typewriter Text Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:50;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-             xml:space="preserve"><tspan
-               style="font-size:30px;stroke:none;stroke-width:50;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-               y="518.28815"
-               x="330.84454"
-               sodipodi:role="line"
-               id="tspan8572-7">  return something;</tspan><tspan
-               style="font-size:30px;stroke:none;stroke-width:50;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-               y="555.78815"
-               x="330.84454"
-               sodipodi:role="line"
-               id="tspan8788">}</tspan></text>
-        </g>
-      </g>
-    </g>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.35236454px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="529.59167"
-       y="469.23193"
-       id="text4682-2"
-       sodipodi:linespacing="125%"
-       transform="scale(1.0181208,0.98220171)"><tspan
-         sodipodi:role="line"
-         x="529.59167"
-         y="469.23193"
-         id="tspan4688-8"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:20.70472908px;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif Medium';text-align:center;text-anchor:middle">Поток 1</tspan><tspan
-         sodipodi:role="line"
-         x="529.59167"
-         y="495.11285"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:20.70472908px;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif Medium';text-align:center;text-anchor:middle"
-         id="tspan8959">Thread 1</tspan></text>
     <g
        transform="matrix(0.70266388,0,0,0.677874,-103.83631,308.82878)"
        id="g8574-3-1-1-0-0">
@@ -647,39 +506,6 @@
                id="text4794-0-7-6-9-3-9-6"
                sodipodi:linespacing="125%"><tspan
                  id="tspan8572-7-8-6-3-1"
-                 sodipodi:role="line"
-                 x="321.22366"
-                 y="513.43011"
-                 style="font-size:30px;fill:#808080;fill-opacity:1;stroke:none;stroke-width:50;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">что-то делаем</tspan></text>
-          </g>
-        </g>
-      </g>
-    </g>
-    <g
-       transform="matrix(0.70266388,0,0,0.677874,266.73157,301.66225)"
-       id="g8574-3-1-1-0-3">
-      <g
-         transform="translate(80.812204,10.101525)"
-         id="g8609-6-6-3-2">
-        <g
-           id="g8692-5-8">
-          <g
-             id="g10053-29">
-            <rect
-               style="fill:#ffffff;fill-opacity:1;stroke:#808080;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:6, 2;stroke-dashoffset:0;stroke-opacity:1"
-               id="rect4798-0-3-5-0-4-3-4"
-               width="237.89899"
-               height="45.970013"
-               x="304.80948"
-               y="485.91513" />
-            <text
-               xml:space="preserve"
-               style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:25px;line-height:125%;font-family:'CMU Typewriter Text';-inkscape-font-specification:'CMU Typewriter Text Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:50;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-               x="321.22366"
-               y="513.43011"
-               id="text4794-0-7-6-9-3-9-5"
-               sodipodi:linespacing="125%"><tspan
-                 id="tspan8572-7-8-6-3-7"
                  sodipodi:role="line"
                  x="321.22366"
                  y="513.43011"
@@ -721,24 +547,6 @@
         </g>
       </g>
     </g>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.35236454px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="350.29419"
-       y="698.88068"
-       id="text10328"
-       sodipodi:linespacing="125%"
-       transform="scale(1.0181208,0.98220171)"><tspan
-         sodipodi:role="line"
-         id="tspan10330"
-         x="350.29419"
-         y="698.88068"
-         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:20.70472908px;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif Medium'">Одновременно!</tspan></text>
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.07047296;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Mstart);marker-end:url(#Arrow1Mend)"
-       d="m 353.49113,654.82504 c 0,0 39.03888,-12.32562 69.56018,13.69512 57.50788,-26.70549 110.03291,-18.48842 110.03291,-18.48842"
-       id="path10336"
-       inkscape:connector-curvature="0" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#808080;stroke-width:4.14094591;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.14094588, 4.14094588;stroke-dashoffset:0;stroke-opacity:1"
        d="m 899.90577,601.5238 0,117.77805"
@@ -897,36 +705,6 @@
         </g>
       </g>
     </g>
-    <g
-       id="g8537-6-0"
-       transform="matrix(0.70266388,0,0,0.677874,-183.77074,229.84402)">
-      <g
-         id="g10058-5-0"
-         transform="translate(-5.7504168,-20.862484)">
-        <g
-           id="g11945-6">
-          <rect
-             y="486.85248"
-             x="305.74683"
-             height="55.207031"
-             width="636.66779"
-             id="rect4798-0-8-7"
-             style="fill:#ffffff;fill-opacity:1;stroke:#808080;stroke-width:2.89788866;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-          <text
-             sodipodi:linespacing="125%"
-             id="text4794-0-68-9"
-             y="521.43097"
-             x="319.44315"
-             style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:25px;line-height:125%;font-family:'CMU Typewriter Text';-inkscape-font-specification:'CMU Typewriter Text Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:50;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-             xml:space="preserve"><tspan
-               style="font-size:30px;stroke:none;stroke-width:50;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-               y="521.43097"
-               x="319.44315"
-               sodipodi:role="line"
-               id="tspan6958-4-1">pthread_create(&amp;id2, NULL, func, arg2);</tspan></text>
-        </g>
-      </g>
-    </g>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#808080;stroke-width:2.76063061;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.76063059, 2.76063059;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#TriangleOutM-2)"
        d="m 402.16811,481.575 0,49.9532 92.36984,0"
@@ -963,11 +741,232 @@
         </g>
       </g>
     </g>
+    <g
+       transform="matrix(0.70266388,0,0,0.677874,561.49591,236.36707)"
+       id="g8574-26">
+      <g
+         id="g10149-7">
+        <rect
+           style="fill:#ffffff;fill-opacity:1;stroke:#808080;stroke-width:2.02458978;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4798-0-3-64"
+           width="352.02655"
+           height="84.80188"
+           x="305.59659"
+           y="486.70224" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:25px;line-height:125%;font-family:'CMU Typewriter Text';-inkscape-font-specification:'CMU Typewriter Text Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:50;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           x="319.92572"
+           y="517.32819"
+           id="text4794-0-7-6"
+           sodipodi:linespacing="125%"><tspan
+             id="tspan6958-8-1"
+             sodipodi:role="line"
+             x="319.92572"
+             y="517.32819"
+             style="font-size:30px;stroke:none;stroke-width:50;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">func(void *param) {</tspan><tspan
+             id="tspan8572-2"
+             sodipodi:role="line"
+             x="319.92572"
+             y="554.82819"
+             style="font-size:30px;stroke:none;stroke-width:50;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">  // param равен arg2</tspan></text>
+      </g>
+    </g>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#808080;stroke-width:2.76063061;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.76063059, 2.76063059;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#TriangleOutM)"
+       d="m 338.25335,558.61785 0,47.93292 435.82171,0"
+       id="path8976"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <rect
+       style="fill:#c1e1ff;fill-opacity:1;stroke:none;stroke-width:1.99354672;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect10311-9"
+       width="267.35315"
+       height="442.91345"
+       x="488.74921"
+       y="433.15851" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.35236454px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="350.29419"
+       y="698.88068"
+       id="text10328"
+       sodipodi:linespacing="125%"
+       transform="scale(1.0181208,0.98220171)"><tspan
+         sodipodi:role="line"
+         id="tspan10330"
+         x="350.29419"
+         y="698.88068"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:20.70472908px;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif Medium'">Одновременно!</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#808080;stroke-width:2.76063061;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.76063059, 2.76063059;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker9108)"
+       d="m 515.5309,835.72882 -149.27755,0 -1.01015,34.04226"
+       id="path9106"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#808080;stroke-width:4.14094591;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.14094588, 4.14094588;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 621.27551,533.59164 0,245.05727"
+       id="path8934-8"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <g
+       transform="matrix(0.70266388,0,0,0.677874,281.35041,171.46537)"
+       id="g8574">
+      <g
+         id="g10149">
+        <rect
+           style="fill:#ffffff;fill-opacity:1;stroke:#808080;stroke-width:2.03676939;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4798-0-3"
+           width="356.32693"
+           height="84.789474"
+           x="305.60281"
+           y="486.70847" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:25px;line-height:125%;font-family:'CMU Typewriter Text';-inkscape-font-specification:'CMU Typewriter Text Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:50;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           x="319.92572"
+           y="517.32819"
+           id="text4794-0-7"
+           sodipodi:linespacing="125%"><tspan
+             id="tspan6958-8"
+             sodipodi:role="line"
+             x="319.92572"
+             y="517.32819"
+             style="font-size:30px;stroke:none;stroke-width:50;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">func(void *param) {</tspan><tspan
+             id="tspan8572"
+             sodipodi:role="line"
+             x="319.92572"
+             y="554.82819"
+             style="font-size:30px;stroke:none;stroke-width:50;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">  // param равен arg1</tspan></text>
+      </g>
+    </g>
+    <g
+       transform="matrix(0.70266388,0,0,0.677874,279.94843,459.69852)"
+       id="g8574-2">
+      <g
+         id="g8790">
+        <g
+           id="g10155"
+           transform="translate(7.9594193,4)">
+          <rect
+             y="486.64368"
+             x="321.70047"
+             height="84.918976"
+             width="312.20328"
+             id="rect4798-0-3-6"
+             style="fill:#ffffff;fill-opacity:1;stroke:#808080;stroke-width:1.9079529;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          <text
+             sodipodi:linespacing="125%"
+             id="text4794-0-7-5"
+             y="518.28815"
+             x="330.84454"
+             style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:25px;line-height:125%;font-family:'CMU Typewriter Text';-inkscape-font-specification:'CMU Typewriter Text Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:50;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             xml:space="preserve"><tspan
+               style="font-size:30px;stroke:none;stroke-width:50;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               y="518.28815"
+               x="330.84454"
+               sodipodi:role="line"
+               id="tspan8572-7">  return something;</tspan><tspan
+               style="font-size:30px;stroke:none;stroke-width:50;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               y="555.78815"
+               x="330.84454"
+               sodipodi:role="line"
+               id="tspan8788">}</tspan></text>
+        </g>
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.35236454px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="529.59167"
+       y="469.23193"
+       id="text4682-2"
+       sodipodi:linespacing="125%"
+       transform="scale(1.0181208,0.98220171)"><tspan
+         sodipodi:role="line"
+         x="529.59167"
+         y="469.23193"
+         id="tspan4688-8"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:20.70472908px;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif Medium';text-align:center;text-anchor:middle">Поток 1</tspan><tspan
+         sodipodi:role="line"
+         x="529.59167"
+         y="495.11285"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:20.70472908px;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif Medium';text-align:center;text-anchor:middle"
+         id="tspan8959">Thread 1</tspan></text>
+    <g
+       transform="matrix(0.70266388,0,0,0.677874,266.73157,301.66225)"
+       id="g8574-3-1-1-0-3">
+      <g
+         transform="translate(80.812204,10.101525)"
+         id="g8609-6-6-3-2">
+        <g
+           id="g8692-5-8">
+          <g
+             id="g10053-29">
+            <rect
+               style="fill:#ffffff;fill-opacity:1;stroke:#808080;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:6, 2;stroke-dashoffset:0;stroke-opacity:1"
+               id="rect4798-0-3-5-0-4-3-4"
+               width="237.89899"
+               height="45.970013"
+               x="304.80948"
+               y="485.91513" />
+            <text
+               xml:space="preserve"
+               style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:25px;line-height:125%;font-family:'CMU Typewriter Text';-inkscape-font-specification:'CMU Typewriter Text Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:50;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               x="321.22366"
+               y="513.43011"
+               id="text4794-0-7-6-9-3-9-5"
+               sodipodi:linespacing="125%"><tspan
+                 id="tspan8572-7-8-6-3-7"
+                 sodipodi:role="line"
+                 x="321.22366"
+                 y="513.43011"
+                 style="font-size:30px;fill:#808080;fill-opacity:1;stroke:none;stroke-width:50;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">что-то делаем</tspan></text>
+          </g>
+        </g>
+      </g>
+    </g>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Mend)"
        d="M 424.26407,667.49408 C 508.10673,549.30623 808.12204,648.30119 808.12204,648.30119"
        id="path15308"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.07047296;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Mstart);marker-end:url(#Arrow1Mend)"
+       d="m 353.49113,654.82504 c 0,0 39.03888,-12.32562 69.56018,13.69512 57.50788,-26.70549 110.03291,-18.48842 110.03291,-18.48842"
+       id="path10336"
+       inkscape:connector-curvature="0" />
+    <g
+       id="g8537-6-0"
+       transform="matrix(0.70266388,0,0,0.677874,-183.77074,229.84402)">
+      <g
+         id="g10058-5-0"
+         transform="translate(-5.7504168,-20.862484)">
+        <g
+           id="g11945-6">
+          <rect
+             y="486.85248"
+             x="305.74683"
+             height="55.207031"
+             width="636.66779"
+             id="rect4798-0-8-7"
+             style="fill:#ffffff;fill-opacity:1;stroke:#808080;stroke-width:2.89788866;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+          <text
+             sodipodi:linespacing="125%"
+             id="text4794-0-68-9"
+             y="521.43097"
+             x="319.44315"
+             style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:25px;line-height:125%;font-family:'CMU Typewriter Text';-inkscape-font-specification:'CMU Typewriter Text Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:50;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             xml:space="preserve"><tspan
+               style="font-size:30px;stroke:none;stroke-width:50;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               y="521.43097"
+               x="319.44315"
+               sodipodi:role="line"
+               id="tspan6958-4-1">pthread_create(&amp;id2, NULL, func, arg2);</tspan></text>
+        </g>
+      </g>
+    </g>
   </g>
 </svg>
