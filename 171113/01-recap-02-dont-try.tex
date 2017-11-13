@@ -5,11 +5,11 @@
 \end{frame}
 
 \begin{frame}[fragile]{Загадка}
-	Что произойдёт при запуске \href{https://github.com/yeputons/fall-2016-paradigms/raw/master/161019/sources/12-optimizer.c}{кода}?
+	Что произойдёт при запуске \href{https://github.com/yeputons/fall-2017-paradigms/raw/master/171113/sources/01-optimizer.cpp}{кода}?
 	Предполагаем, что запись и чтение \t{int} атомарны.
 \begin{minted}{cpp}
 int data;
-void* worker(void* arg __attribute__((unused))) {
+void* worker(void*) {
     for (;;) {
         data++;
     }
@@ -47,7 +47,7 @@ void* worker(void* arg __attribute__((unused))) {
 \end{frame}
 
 \begin{frame}[fragile]{volatile}
-	Изменим \href{https://github.com/yeputons/fall-2016-paradigms/raw/master/161019/sources/13-volatile.c}{код}:
+	Изменим \href{https://github.com/yeputons/fall-2017-paradigms/raw/master/171113/sources/02-volatile.cpp}{код}:
 \begin{minted}{cpp}
 volatile int data;  // Обозначили переменную volatile.
 void* worker(void* arg __attribute__((unused))) {
