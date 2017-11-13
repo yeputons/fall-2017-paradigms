@@ -103,11 +103,24 @@ while (true) {
 		\item Нам нужна атомарная операция <<отпусти мьютекс и жди события>>.
 		\item Такой примитив синхронизации в pthread (и вообще много где) называется \textit{условная переменная} (conditional variable).
 		\item Смысл: условная переменная "--- это способ оповещать потоки о \textit{возможном} изменении некоторого \textit{условия}, защищённого мьютексом.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Событие наступило до ожидания}
+	\svgimg{02-condvar-02-condvar-03}
+\end{frame}
+
+\begin{frame}{Событие наступило после ожидания}
+	\svgimg{02-condvar-02-condvar-04}
+\end{frame}
+
+\begin{frame}{Свойства условных переменных}
+	\begin{itemize}
 		\item Ожидание пассивное, ресурсы CPU не тратятся.
 		\item На каждое условие создаётся условная переменная.
 		\item Поток, изменивший условие, может разбудить либо все ожидающие потоки (\t{broadcast}), либо один случайный (\t{signal}).
 		\item Бывают spurious wakeup "--- система иногда может разбудить ждущий поток, даже если никто не вызывал \t{signal}/\t{broadcast}.
-		\item Поэтому важно проверять условие после пробуждения.
+		\item Поэтому важно проверять условие после пробуждения (\t{while}, а не \t{if}).
 	\end{itemize}
 \end{frame}
 
@@ -153,7 +166,7 @@ pthread_mutex_unlock(&m);
 
 \begin{frame}{Упражнение}
 	\begin{enumerate}
-		\item Возьмите реализацию с producer-consumer с \href{https://github.com/yeputons/fall-2016-paradigms/raw/master/161019/sources/14-prod-cons.c}{GitHub}.
+		\item Возьмите реализацию с producer-consumer с \href{https://github.com/yeputons/fall-2017-paradigms/raw/master/171113/sources/03-prod-cons.cpp}{GitHub}.
 		\item Запустите и убедитесь, что на каждую введённую строчу отзывается второй поток: сначала сразу, а потом через две секунды.
 		\item Убедитесь, что если во время ожидания второго потока ввести новую строчку, то на неё второй поток тоже среагирует.
 		\item Убедитесь, что если во время ожидания ввести две новых строчки, то будет обработана только последняя.
@@ -183,11 +196,11 @@ while (true) {
 	\begin{itemize}
 		\item \t{fgets} меняет буфер, который также читается из другого потока.
 		\item Значит, буфер должен быть защищён мьютексом на всех стадиях.
-		\item Если поменяем \t{fgets} и \t{pthraed\_mutex\_lock} местами, то\only<1>{...}\only<2->{ будет deadlock: consumer не может читать данные, пока producer ждёт.}
+		\item Если поменяем \t{fgets} и \t{pthread\_mutex\_lock} местами, то\only<1>{...}\only<2->{ будет deadlock: consumer не может читать данные, пока producer ждёт.}
 		\only<3->{
 		\item
 			Правильно сначала считать в локальную переменную, а потом скопировать в буфер.
-			\href{https://github.com/yeputons/fall-2016-paradigms/raw/master/161019/sources/15-prod-cons-fixed.c}{Код}.
+			\href{https://github.com/yeputons/fall-2017-paradigms/raw/master/171113/sources/04-prod-cons-fixed.cpp}{Код}.
 		}
 	\end{itemize}
 \end{frame}
