@@ -5,8 +5,8 @@
 
 #pragma GCC optimize("-O2")
 
-volatile int data;
-void* worker(void* arg __attribute__((unused))) {
+int data;
+void* worker(void*) {
     for (;;) {
         data++;
     }

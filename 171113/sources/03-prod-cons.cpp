@@ -2,7 +2,6 @@
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>
 #include <string.h>
 #include <unistd.h>
 
@@ -11,7 +10,7 @@ pthread_cond_t cond;
 
 char str[100];
 bool str_available;
-void* producer(void* arg __attribute__((unused))) {
+void* producer(void*) {
     while (true) {
         fgets(str, sizeof str, stdin);
         pthread_mutex_lock(&m);
@@ -21,7 +20,7 @@ void* producer(void* arg __attribute__((unused))) {
     }
 }
 
-void* consumer(void* arg __attribute__((unused))) {
+void* consumer(void*) {
     while (true) {
         pthread_mutex_lock(&m);
         while (!str_available) {
