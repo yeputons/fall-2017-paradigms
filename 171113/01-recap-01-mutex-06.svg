@@ -203,10 +203,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="528.25416"
+     inkscape:cx="377.23635"
      inkscape:cy="388.69092"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g4631"
      showgrid="false"
      inkscape:snap-bbox="false"
      inkscape:bbox-nodes="false"
@@ -223,7 +223,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -292,12 +292,12 @@
            id="tspan4280-3-8-4">printf(&quot;2&quot;);</tspan></text>
     </g>
     <rect
-       style="fill:#ff0101;fill-opacity:0.36078432;stroke:#808080;stroke-width:0.99999994;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="fill:#ff0101;fill-opacity:0.36078431;stroke:#808080;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect4600"
        width="549.52301"
-       height="300.01532"
+       height="202.03053"
        x="26.263966"
-       y="456.37222" />
+       y="502.83923" />
     <g
        transform="matrix(1.051547,0,0,0.95075286,-345.55827,-0.44717239)"
        id="g8574">
@@ -443,7 +443,7 @@
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:30px;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif Medium'">Поток 1</tspan></text>
     <g
        id="g4363-2"
-       transform="matrix(0.99769427,0,0,0.90305737,496.00679,428.83607)">
+       transform="matrix(0.99769427,0,0,0.90305737,496.00679,384.83607)">
       <rect
          y="488.98315"
          x="306.97144"
@@ -465,12 +465,12 @@
            id="tspan4280-3-8-1">printf(&quot;X&quot;);</tspan></text>
     </g>
     <rect
-       style="fill:#ff0101;fill-opacity:0.36078431;stroke:#808080;stroke-width:0.99999988;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="fill:#ff0101;fill-opacity:0.36078431;stroke:#808080;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect4600-7"
        width="549.52301"
-       height="207.08128"
+       height="136.37062"
        x="485.88339"
-       y="823.56262" />
+       y="778.55249" />
     <g
        transform="matrix(1.051547,0,0,0.95075286,310.83011,111.76822)"
        id="g8574-9">
@@ -485,9 +485,9 @@
                id="g4631"
                transform="translate(0,-13.28822)">
               <rect
-                 y="487.3255"
+                 y="487.33176"
                  x="304.9975"
-                 height="321.63699"
+                 height="262.33911"
                  width="328.58182"
                  id="rect4798-0-3-99"
                  style="fill:#ffffff;fill-opacity:1;stroke:#808080;stroke-width:1.48092747;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
@@ -523,19 +523,9 @@
                    y="675.35651"
                    x="319.92572"
                    sodipodi:role="line">// ждём</tspan><tspan
-                   id="tspan4625"
-                   style="font-size:31.60565948px;stroke:none;stroke-width:50;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-                   y="714.86359"
-                   x="319.92572"
-                   sodipodi:role="line">// ждём</tspan><tspan
-                   id="tspan4627"
-                   style="font-size:31.60565948px;stroke:none;stroke-width:50;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-                   y="754.37061"
-                   x="319.92572"
-                   sodipodi:role="line">// ждём</tspan><tspan
                    id="tspan4629"
                    style="font-size:31.60565948px;stroke:none;stroke-width:50;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-                   y="793.87769"
+                   y="714.86359"
                    x="319.92572"
                    sodipodi:role="line">;</tspan></text>
             </g>
@@ -545,7 +535,7 @@
     </g>
     <g
        id="g4324-7"
-       transform="matrix(0.99769427,0,0,0.90305737,356.68369,482.29781)">
+       transform="matrix(0.99769427,0,0,0.90305737,356.68369,438.29781)">
       <rect
          y="486.90482"
          x="307.93723"
@@ -590,7 +580,7 @@
        inkscape:connector-curvature="0" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#404040;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker4905-3)"
-       d="m 523.76747,705.87989 -128.04565,0"
+       d="m 523.76747,691.87989 -128.04565,0"
        id="path4643-3"
        inkscape:connector-curvature="0" />
     <path
@@ -600,13 +590,23 @@
        inkscape:connector-curvature="0" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#404040;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker4905-9)"
-       d="m 689.43249,839.22002 -155.00127,0"
+       d="m 689.43249,769.22002 -155.00127,0"
        id="path4643-08"
        inkscape:connector-curvature="0" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#404040;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker4905-35)"
-       d="m 528.81147,961.44847 129.97105,0"
+       d="m 528.81147,899.44847 129.97105,0"
        id="path4643-8"
        inkscape:connector-curvature="0" />
-  </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot7155"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:15px;line-height:125%;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion7157"><rect
+           id="rect7159"
+           width="119.198"
+           height="43.436558"
+           x="706.09662"
+           y="455.19086" /></flowRegion><flowPara
+         id="flowPara7161"></flowPara></flowRoot>  </g>
 </svg>
