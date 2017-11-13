@@ -40,7 +40,7 @@ void* consumer(void*) {
     }
 }
 
-int main(void) {
+int main() {
     pthread_mutex_init(&m, NULL);
     pthread_cond_init(&cond, NULL);
 

@@ -13,7 +13,7 @@ void* worker(void*) {
     }
 }
 
-int main(void) {
+int main() {
     pthread_t id;
     assert(pthread_create(&id, NULL, worker, NULL) == 0);
     while (data < 100);
