@@ -33,19 +33,18 @@ while (true) {
 	Проблемы есть.
 \end{frame}
 
+\begin{frame}{Повезло}
+	\svgimg{02-condvar-02-condvar-01}
+\end{frame}
+
+\begin{frame}{Не повезло}
+	\svgimg{02-condvar-02-condvar-02}
+\end{frame}
+
 \begin{frame}{Ну вы поняли}
 	\begin{center}
 		\includegraphics[scale=0.4]{race-condition-everywhere.jpg}
 	\end{center}
-\end{frame}
-
-\begin{frame}{Чуть подробнее}
-	\begin{enumerate}
-		\item Consumer проверяет \t{!q.empty()}
-		\item Producer добавляет данные.
-		\item Producer вызывает \t{e.notify()}, а будить некого.
-		\item Consumer вызывает \t{e.wait()} и засыпает навечно.
-	\end{enumerate}
 	Что делать?
 \end{frame}
 
