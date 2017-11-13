@@ -220,22 +220,3 @@ while (true) {
 			надо самому явно формулировать условие, которого ждёт поток.
 	\end{itemize}
 \end{frame}
-
-\begin{frame}{Необязательное упражнение на дом}
-	Реализуйте Windows Event через conditional variable:
-	\begin{itemize}
-		\item Объект <<событие>> с методами \t{wait} и \t{notify}.
-		\item В каждый момент не более одного потока ждёт (\t{wait}).
-		\item Метод \t{notify} либо пробуждает ждущий поток, либо делает так, что следующий метод \t{wait} мгновенно завершится.
-	\end{itemize}
-	Можно создать отдельную папку в репозитории и прислать код на проверку (в теме "--- \t{[add-161019]}).
-
-	Сигнатура:
-	\begin{itemize}
-		\item \t{typedef ... event\_t;}
-		\item \t{event\_init(event\_t*)}
-		\item \t{event\_wait(event\_t*)}
-		\item \t{event\_notify(event\_t*)}
-		\item \t{event\_destroy(event\_t*)}
-	\end{itemize}
-\end{frame}
