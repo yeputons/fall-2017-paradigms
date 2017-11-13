@@ -43,14 +43,14 @@
 			Если вы под 64-битным Linux "--- используйте thread sanitizer (добавьте ключи \t{-g -fsanitize=thread -O2 -fPIC -pie}).
 			Он хорош в нахождении некоторых гонок данных, \textit{происходящих во время выполнения}.
 		\item
-			Для аналогичных целей можно использовать Valgrind.
+			Для аналогичных целей можно использовать Valgrind (задавайте вопросы!).
 		\item
 			На Windows можно поставить виртуальную машину.
 	\end{itemize}
 \end{frame}
 
 \begin{frame}[fragile]{Пример вывода Thread Sanitizer-1}
-	На \href{https://github.com/yeputons/fall-2016-paradigms/raw/master/161019/sources/08-two-threads.c}{примере с двумя счётчиками} находит гонку сразу,
+	На \href{https://github.com/yeputons/fall-2017-paradigms/raw/master/171023/sources/08-two-threads.cpp}{примере с двумя счётчиками} находит гонку сразу,
 	во время первых выводов на экран:
 \begin{verbatim}
 ==================
