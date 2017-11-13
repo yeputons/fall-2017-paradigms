@@ -40,44 +40,13 @@
 	\begin{itemize}
 		\item Запускайте на больших тестах, в которых потоки работают медленно и часто происходит переключение.
 		\item
-			Если вы под 64-битным Linux "--- используйте thread sanitizer (добавьте ключи \t{-g -fsanitize=thread -O2 -fPIC -pie}).
+			Если вы под 64-битным Linux "--- используйте thread sanitizer.
 			Он хорош в нахождении некоторых гонок данных, \textit{происходящих во время выполнения}.
 		\item
-			Для аналогичных целей можно использовать Valgrind (задавайте вопросы!).
+			Аналогично можно использовать Valgrind.
 		\item
-			На Windows можно поставить виртуальную машину.
+			На Windows можно поставить виртуальную машину с Linux и запускать там.
+		\item
+			Задавайте вопросы!
 	\end{itemize}
-\end{frame}
-
-\begin{frame}[fragile]{Пример вывода Thread Sanitizer-1}
-	На \href{https://github.com/yeputons/fall-2017-paradigms/raw/master/171023/sources/08-two-threads.cpp}{примере с двумя счётчиками} находит гонку сразу,
-	во время первых выводов на экран:
-\begin{verbatim}
-==================
-WARNING: ThreadSanitizer: data race (pid=13170)
-  Read of size 4 at 0x7f31e00e12cc by thread T2:
-    #0 worker .../08-two-threads.c:10 (...)
-    #1 <null> <null>:0 (libtsan.so.0+0x000000032d69)
-
-  Previous write of size 4 at 0x7f31e00e12cc by thread T1:
-    #0 worker .../08-two-threads.c:12 (...)
-    #1 <null> <null>:0 (libtsan.so.0+0x000000032d69)
-
-  Location is global 'data' of size 4 at ... (...)
-\end{verbatim}
-\end{frame}
-
-\begin{frame}[fragile]{Пример вывода Thread Sanitizer-2}
-	Также указывает, где были созданы соответствующие потоки:
-\begin{verbatim}
-  Thread T2 (tid=13173, running) created by main thread at:
-    #0 pthread_create <null>:0 (libtsan.so.0+0x000000047f23)
-    #1 main .../08-two-threads.c:20 (...)
-
-  Thread T1 (tid=13172, finished) created by main thread at:
-    #0 pthread_create <null>:0 (libtsan.so.0+0x000000047f23)
-    #1 main .../08-two-threads.c:19 (...)
-
-SUMMARY: ThreadSanitizer: data race .../08-two-threads.c:10
-\end{verbatim}
 \end{frame}
