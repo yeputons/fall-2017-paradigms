@@ -1,4 +1,4 @@
-\subsection{Грабли}
+\subsection{Грабли и плюшки}
 
 \begin{frame}
 	\tableofcontents[currentsection,currentsubsection]
@@ -31,19 +31,49 @@ min :: Ord a => a -> a -> a
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{Каррирование}
+\begin{frame}[fragile]{Каррирование}
 	\begin{itemize}
 		\item Функция от двух аргументов $f(x, y)$ "--- то же самое, что функция от одного аргумента $f'(x)$,
 			которая возвращает функцию от одного аргумента $g_x(y)=f(x, y)$.
 		\item Такой переход называется \textit{каррированием}
 		\item С точки зрения Haskell, функции типов \t{a -> b -> c} и \t{a -> (b -> c)} неотличимы.
 		\item Все функции в Haskell "--- от одного аргумента, остальное "--- сахар.
-		\item Можно проверить по синтаксису вызова.
-		\item Можно даже посмотреть, что будет, если написать \t{map (+1)}.
-		\item Или обнаружить, что \t{(3+)} и \t{(+) 3} возвращают одно и то же.
-		\item Поэтому считается, что стрелочка в типах ассоциативна вправо.
-		\item Если ожидали \t{(a -> b) -> (a -> b)}, а получили \t{(a -> b) -> a -> b} "--- это одно и то же.
+		\item Из-за этого частичное применение и работает: \t{(3+)} и \t{(+) 3} равны.
+		\item Можно явно написать функцию от двух аргументов:
+\begin{minted}{haskell}
+s (a, b) = a + b
+s' = uncurry (+)
+\end{minted}
 	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Способы определения функций}
+	\begin{itemize}
+		\item
+\begin{minted}{haskell}
+addTen x = x + 10
+addTenToAll x = map addTen x
+\end{minted}
+		\item
+\begin{minted}{haskell}
+addTen = (+10)
+addTenToAll = map f
+\end{minted}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Композиция функций}
+	Точка "--- оператор композиции функций:
+\begin{minted}{haskell}
+(.) :: (b -> c) -> (a -> b) -> (a -> c)
+-- Приоритет низкий
+((+5) . (*3)) 10
+\end{minted}
+	Читать надо справа налево:
+\begin{minted}{haskell}
+(concat . map words . lines) "1 2\n10 11\n" 
+\end{minted}
+	Композиции функций в каком-то смысле лучше, чем свои вспомогательные функции или явные вызовы.
 \end{frame}
 
 \begin{frame}{Унарный минус}
@@ -56,18 +86,19 @@ min :: Ord a => a -> a -> a
 	\end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]{Как отлаживать}
-	\begin{itemize}
-		\item Ваш лучший друг "--- чтение кода и выписывание типов.
-		\item Haskell обычно выдаёт точный символ, в котором произошла ошибка. Там и надо смотреть.
-		\item Начинать лучше с самой верхней ошибки.
-		\item Можно закомментировать кусок кода, а у оставшегося явно написать нужный тип:
+\begin{frame}[fragile]{Ввод-вывод}
+	\textbf{В домашке не потребуется}
 \begin{minted}{haskell}
-map' :: (a -> b) -> [a] -> [b]
-map' f a b = f a  -- Ошибка компиляции
+solve :: Int -> Int
+solve = (+1)
+mainPure :: [String] -> [String]
+mainPure = map (show . solve . (read :: String -> Int))
+main = interact $ (unlines . mainPure . lines)
 \end{minted}
-		\item Проверяйте код при помощи \href{https://hackage.haskell.org/package/hlint}{hlint}.
-		\item Он заодно проверяет соответствие некоторому стилю.
-		\item Не все рекомендации hlint жизненно необходимо выполнять, так как единого стиля нет.
+	\begin{itemize}
+		\item Функции \t{main} и \t{interact} "--- пока что магия
+		\item Функция \t{show} преобразует почти любое значение в строчку
+		\item Функция \t{read}, если явно указать её тип, преобразует строчку в значение
+		\item Всё работает лениво и интерактивно
 	\end{itemize}
 \end{frame}
