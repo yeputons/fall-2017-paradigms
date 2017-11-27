@@ -64,21 +64,6 @@ lookup :: Eq a => a -> [(a, b)] -> Maybe b
 	\end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]{Реализации по умолчанию}
-	\begin{itemize}
-		\item Для \t{IntList} мы реализовали только \t{==}, а \t{/=} получили автоматом.
-		\item В классе можно указывать реализацию по умолчанию:
-\begin{minted}{haskell}
-class Eq a where
-  (==) :: a -> a -> Bool
-  (==) a b = not (a /= b)
-  (/=) :: a -> a -> Bool
-  (/=) a b = not (a == b)
-\end{minted}
-		\item Тогда \textit{минимальное полное определение} для \t{Eq} "--- это либо \t{==}, либо \t{/=}.
-	\end{itemize}
-\end{frame}
-
 \subsection{Для параметризованных типов}
 \begin{frame}[fragile]{Класс Eq для списков}
 	\begin{itemize}
