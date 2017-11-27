@@ -42,6 +42,7 @@ sum' xs = sum'' 0 xs
 	Можно и нужно писать тесты для функций:
 \begin{minted}{haskell}
 import Test.Hspec  -- cabal install hspec
+                   -- apt-get install haskell-hspec
 main = hspec $ do
   describe "length function" $ do
     it "works on empty list" $ do
