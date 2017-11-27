@@ -67,23 +67,6 @@ getItem _ _              = Nothing
 \end{minted}
 \end{frame}
 
-\begin{frame}[fragile]{Either}
-	На случай, если хотим сообщить об ошибке:
-\begin{minted}{haskell}
--- Уже объявлен в языке, писать не надо.
-data Either a b = Left a | Right b
-
-parseBool :: String -> Either String Bool
-parseBool "true"  = Right True
-parseBool "false" = Right False
-parseBool x       = Left ("Invalid value: " ++ x)
-\end{minted}
-	\begin{itemize}
-		\item Обычно за \t{Right} принимает успешное вычисление (<<правильный>> результат).
-		\item А за \t{Left} "--- сообщение об ошибке (<<левый>> результат).
-	\end{itemize}
-\end{frame}
-
 \begin{frame}[fragile]{Двоичная куча}
 \begin{minted}{haskell}
 data Heap = Nil | Node Int Heap Heap deriving Show
