@@ -57,43 +57,6 @@ struct PaymentMethod {
 	\end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]{Упражнение (if'ы)}
-\begin{minted}{cpp}
-bool need_processing(PaymentMethod *m) {
-  if (dynamic_cast<CardPayment*>(m)) {
-    return true;
-  }
-  if (dynamic_cast<CashPayment*>(m)) {
-    return false;
-  }
-  assert(false);
-}
-\end{minted}
-	\begin{itemize}
-		\item Можно обрабатывать несколько случаев одинаково.
-		\item Узнаем об отсутствующем \t{if} только во время выполнения, если есть тест.
-		\item Компилятор не проверит, что мы ничего не забыли.
-	\end{itemize}
-\end{frame}
-
-\begin{frame}[fragile]{Упражнение (Visitor)}
-\begin{minted}{cpp}
-bool result;
-class NeedProcessingVisitor {
-  void visit(CardPayment *p) { result = true; }
-  void visit(CashPayment *p) { result = false; }
-}
-bool need_processing(PaymentMethod *m) {
-  m->accept(NeedProcessingVisitor());
-  return result;
-}
-\end{minted}
-	\begin{itemize}
-		\item Очень много кода не по делу.
-		\item Создаётся целый объект в памяти и идут пляски с возвращаемым значением.
-	\end{itemize}
-\end{frame}
-
 \subsection{Что такое тип-сумма}
 \begin{frame}[fragile]{Тип-сумма}
 	\begin{itemize}
