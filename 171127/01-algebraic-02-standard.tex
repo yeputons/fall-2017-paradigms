@@ -121,25 +121,6 @@ data MaxMinHeap = Nil2 | MaxNode Int MinMaxHeap MinMaxHeap
 	К сожалению, назвать оба конструктора данных \t{Nil} нельзя.
 \end{frame}
 
-\begin{frame}[fragile]{Дерево разбора выражения}
-\begin{minted}{haskell}
-data BinOp = Add | Sub | Mul | Div deriving Show
-data Tree = Number Int
-          | Reference String
-          | BinaryOperation BinOp Tree Tree
-          deriving Show
--- Глубокий pattern matching
-fold' Sub (Reference a) (Reference b) | a == b = Number 0
-fold' Mul (Reference _) (Number 0)             = Number 0
-fold' Mul (Number 0)    (Reference _)          = Number 0
-fold' op a b = BinaryOperation op a b
--- Рекурсивное сворачивание выражений
-fold (BinaryOperation op a b) =
-    fold' op (fold a) (fold b)
-fold x = x
-\end{minted}
-\end{frame}
-
 \begin{frame}[fragile]{Односвязные списки}
 \begin{minted}{haskell}
 data List a = Empty | Cons a (List a) deriving Show
