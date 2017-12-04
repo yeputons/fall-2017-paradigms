@@ -70,7 +70,8 @@ with sqlite3.Connection("sql-injection.sqlite3") as db:
 with sqlite3.Connection("sql-injection.sqlite3") as db:
   key = input('Text key: ')
   cursor = db.execute("""SELECT * FROM Text
-                         WHERE owner='user' AND key=?", [key])
+                         WHERE owner='user'
+                           AND key=?""", [key])
   print(list(cursor))
 \end{minted}
 	Теперь драйвер базы данных знает, что \t{key} "--- это значение от пользователя,
