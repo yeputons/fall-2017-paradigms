@@ -13,19 +13,20 @@ SELECT SUM(Pop), GovForm
 FROM Country
 WHERE ...
 GROUP BY GovForm
+HAVING ...
 \end{minted}
 		\end{minipage}
 \vspace{10pt}
 
-		\begin{tabular}{rllcll}
+		\begin{tabular}{rllclll}
 			\hline
-			& Pop & GovForm & & SUM(Pop) & GovForm \\\hline
-			\multirow{6}{*}{$\xrightarrow{\t{WHERE}}$} & 618 & Republic & \rdelim\}{3}{20pt}[$\longrightarrow$] & \multirow{3}{*}{1134} & \multirow{3}{*}{Republic} \\
-			& 455 & Republic & \\
-			& 61 & Republic & \\
-			& 650 & Monarchy & \rdelim\}{2}{20pt}[$\longrightarrow$] & \multirow{2}{*}{17425} & \multirow{2}{*}{Monarchy} \\
-			& 17364 & Monarch & \\
-			& \vdots & \vdots & & \vdots & \vdots \\
+			& Pop & GovForm & & SUM(Pop) & GovForm & \\\hline
+			\multirow{6}{*}{$\xrightarrow{\t{WHERE}}$} & 618 & Republic & \rdelim\}{3}{20pt}[$\longrightarrow$] & \multirow{3}{*}{1134} & \multirow{3}{*}{Republic} & \multirow{6}{*}{$\xrightarrow{\t{HAVING}}$}\\
+			& 455 & Republic \\
+			& 61 & Republic \\
+			& 650 & Monarchy & \rdelim\}{2}{20pt}[$\longrightarrow$] & \multirow{2}{*}{17425} & \multirow{2}{*}{Monarchy} & \\
+			& 17364 & Monarch \\
+			& \vdots & \vdots & & \vdots & \vdots & \\
 		\end{tabular}
 	\end{center}
 \end{frame}
