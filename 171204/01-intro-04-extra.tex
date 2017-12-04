@@ -1,26 +1,24 @@
-\subsection{Немного практики}
+\subsection{Бонус: доступ из кода}
 
-\begin{frame}{Упражнения}
-	\begin{enumerate}
-		\item Скачайте файл \href{https://www.dropbox.com/s/jo26qgwysxsb8aj/literacy.sql?dl=0}{literacy.sql}.
-		\item Выберите имя для файла, где у вас будет лежать БД для тестов (например, \t{literacy.sqlite3}.
-		\item Выполните запросы из \t{literacy.sql}:
-			\begin{center}
-				\t{sqlite3 literacy.sqlite3 < literacy.sql}
-			\end{center}
-			Каждый раз, когда вы будете выполнять команды из \t{literacy.sql}, таблицы
-			будут полностью пересозданы.
-			Не бойтесь что-то сломать.
+\begin{frame}[fragile]{Python}
+\begin{minted}{python}
+with sqlite3.Connection("literacy.sqlite3") as db:
+  cursor = db.execute("SELECT * FROM Country LIMIT 3")
+  print(cursor.description)
+  print(list(cursor))
+  print(list(cursor))  # Что-нибудь выведет?
+\end{minted}
+	\begin{itemize}
+		\item Терминология очень похожа во всех языках и СУБД.
+		\item Обычно в языке есть стандартный интерфейс общения с любыми СУБД.
+			А \textit{драйвер} СУБД реализует этот интерфейс в языке.
+		\item Сначала мы устанавливаем \textit{соединение} с СУБД.
+		\item Результатом запроса является \textit{курсор} "--- это такой итератор по строчкам запроса.
+		\item Что возвращают запросы, кроме \t{SELECT} "--- зависит от СУБД.
 		\item
-		     Выполните SQL-запросы (либо в командной строке, либо в GUI):
-		     \begin{enumerate}
-		     	\item Всю информацию по всем странам.
-		     	\item Первые десять стран (если сортировать по названию).
-		     	\item Средние население и площадь страны.
-		     	\item Площадь и население Франции.
-		     	\item Количество французских территорий и их суммарную площадь и население.
-		     \end{enumerate}
-	\end{enumerate}
+			Иногда считается, что не запрос возвращает курсор, а надо
+			сначала создать курсор, а потом в нём выполнить запрос.
+	\end{itemize}
 \end{frame}
 
 \begin{frame}[t,fragile]{SQL-инъекции}
@@ -71,7 +69,8 @@ with sqlite3.Connection("sql-injection.sqlite3") as db:
 \begin{minted}{python}
 with sqlite3.Connection("sql-injection.sqlite3") as db:
   key = input('Text key: ')
-  cursor = db.execute("SELECT * FROM Text WHERE owner='user' AND key=?", [key])
+  cursor = db.execute("""SELECT * FROM Text
+                         WHERE owner='user' AND key=?", [key])
   print(list(cursor))
 \end{minted}
 	Теперь драйвер базы данных знает, что \t{key} "--- это значение от пользователя,
